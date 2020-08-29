@@ -28,6 +28,6 @@ defmodule RecWeb.GameLive do
   end
 
   defp erase(socket) do
-    assign(socket, eraser: Game.Eraser.erase(socket.assigns.eraser))
+    assign(socket, eraser: Game.Eraser.perform(socket.assigns.eraser))
   end
 end
